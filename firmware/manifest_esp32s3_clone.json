@@ -1,0 +1,21 @@
+{
+  "name": "Type D Firmware Bundle (ESP32)",
+  "version": "v0.7.2 Beta",
+  "images": [
+    {
+      "src": "images/dc.png",
+      "label": "Darkone Customs"
+    }
+  ],
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "Type_D_exp_clone.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

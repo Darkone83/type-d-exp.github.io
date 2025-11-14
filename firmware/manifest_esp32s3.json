@@ -1,6 +1,12 @@
 {
-  "name": "Type D EXP",
-  "version": "1.0.0",
+  "name": "Type D Firmware Bundle (ESP32-S3)",
+  "version": "v0.7.2 Beta",
+  "images": [
+    {
+      "src": "images/dc.png",
+      "label": "Darkone Customs"
+    }
+  ],
   "builds": [
     {
       "chipFamily": "ESP32-S3",
