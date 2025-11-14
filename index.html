@@ -306,7 +306,7 @@
         <div class="brand">
           <!-- PROJECT: branding lines -->
           <div class="brand-main">DARKONE CUSTOMS</div>
-          <div class="brand-sub">Type-D / ESP32 Web Flasher</div>
+          <div class="brand-sub">Type-D Expansion / ESP32 Web Flasher</div>
         </div>
         <div class="tag-pill">ESP32 · ESP32-S3 · WebSerial</div>
       </header>
@@ -336,8 +336,8 @@
               <!-- PROJECT: add more options later; hook JS below -->
               <label for="profile">Board:</label>
               <select id="profile">
-                <option value="esp32s3" selected>ESP32-S3 – Type-D S3</option>
-                <option value="esp32">ESP32 – Type-D (legacy)</option>
+                <option value="esp32s3" selected>ESP32-S3 – Type-D Exp</option>
+                <option value="esp32s3_clone">ESP32-S3 – Type-D Exp (clone)</option>
               </select>
             </div>
 
@@ -434,8 +434,8 @@
 
       function updateManifest() {
         switch (profileSelect.value) {
-          case "esp32":
-            installer.setAttribute("manifest", "firmware/manifest_esp32.json");
+          case "esp32s3_clone":
+            installer.setAttribute("manifest", "firmware/manifest_esp32s3_clone.json");
             break;
           case "esp32s3":
           default:
